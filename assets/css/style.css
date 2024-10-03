@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+.form{
+    width: auto;
+    border: 3px solid white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+.err{
+    color: red;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.errpart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.form label{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.form-control{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+    outline: none;
+}
+.form-control:hover{
+    border: 2px solid orange;
+}
+.form-control:hover::placeholder{
+    color: orange;
+}
+
+.errpart p{
+    margin-left: 10px;
+}
+.form-control::placeholder{
+    color: white;
+}
+.form-control:focus{
+    color: white;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+}
+.btn:hover{
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
