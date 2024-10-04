@@ -10,11 +10,11 @@
     </head>
     <body>
         
-        <form action="" class="form" onchange="submitForm()" onsubmit="return submitForm()">
+        <form action="" class="form" onsubmit="return submitForm()">
 
             <div class="errpart">
                 <label for="name">Name : </label>
-                <input type="text" placeholder="Enter Your Full Name" id="name" class="form-control">
+                <input type="text" placeholder="Enter Your Full Name" id="name" onkeypress="return nameFun()" class="form-control">
                 <p class="err" id="nameErr"></p>
             </div><br><br>
 

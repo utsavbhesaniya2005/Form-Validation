@@ -117,3 +117,29 @@ const submitForm = () =>{
     }
 
 }
+
+
+// Name Validation
+const nameFun = () => {
+
+    nameVal = name.value;
+
+
+    if(nameVal.trim() == ''){
+
+        document.getElementById("nameErr").innerHTML = "Name Must Be Required";
+
+        name.style.borderColor = "red";
+    }else{
+     
+        if(nameVal.trim().length < 3){
+
+            name.style.borderColor = "red";
+            document.getElementById("nameErr").innerHTML = "Name contains at least 3 charaters";
+        }else{
+
+            document.getElementById("nameErr").innerHTML = "";
+            name.style.borderColor = "white";
+        }
+    }
+}
